@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Personal Profile Website</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="stylesheet/style.css">
+    <!-- BOX ICONS -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
+    <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
+
+</head>
+<body>
+    <header class="l-header" id="header">
+        <nav class="navbar">
+            <a class="logo" href="index.html">
+                <span>ANDR</span><i class='bx bxs-bullseye'></i>
+            </a>
+
+            <div class="menu-nav" id="menu">
+                <ul class="list-menu">
+                    <li class="menu-item"><a class="link-menu" href="index.html">Home</a></li>
+                    <li class="menu-item"><a class="link-menu" href="#Bio">Biography</Menu></a></li>
+                    <li class="menu-item"><a class="link-menu" href="#Experiences">Experience</a></li>
+                    <li class="menu-item"><a class="link-menu" href="#Interests">Interest</a></li>
+                    <li class="menu-item"><a class="link-menu" href="#Contacts">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="toggle-nav" id="toggle-nav">
+                <i class='bx bx-caret-down-circle'></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- CONTENT -->
+    <main>
+            <section class="home max-width" id="content">
+                <div class="text">
+                    <div class="text-top"><h1>Hi, I'm Androsa</h1></div>
+                    <div class="text-mid"><h3>Computer Engineering Student</h2></div>
+                    <div class="text-bottom"><h2>Beginner at <span>Front-End Dev</span></h3></div>
+                </div>
+            </section>
+
+        <div class="container max-width">   
+
+        <section class="articles"> 
+
+            <div class="Biography" id="Bio">
+                <hr class="fix-overlapping">
+                <br>
+                <div class="first">AUTHOR'S BIOGRAPHY</div>
+                <div class="content">
+                    <div class="left-pic">
+                    <figure>
+                        <img src="data:image/jpeg;base64,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">
+                        <figcaption>Christopher Paolini</figcaption>
+                    </figure>
+                        <!-- <div class="sec">
+                            <h1>Who is He?</h1>
+                        </div> -->
+                    </div>
+                <article id="christopher-paolini">
+                    <div class="title">Who is He?</div>
+                    <div class="titel-2">THE INHERITANCE CYCLE WRITER</div>
+                    <p>Christopher Paolini is one of the most well known American authors. He was born on 17th of November, 1983 in Los Angeles. His best piece of work is termed as Inheritance Cycle, which comprises of publications like Inheritance, Eldest, Eragon and Brisingr. He produced his first manuscript at Paradise Valley, Montana, where he initially used to live.</p>
+                    <p>In the year 2005, the sequel of Eragon was made public with the title, Eldest. Brisingr was the third publication of the Inheritance Cycle and was released in the year 2008. Paolini planned the Inheritance Cycle to be completed in three publications, but few details of Brisingr were left and then published afterwards in the last book of the series named as Inheritance.</p> 
+                </article>
+                </div>
+            </div>
+
+            <div class="exp" id="Experiences">
+                <hr class="fix-overlapping">
+                <br>
+                <div class="first">Academic and others</div>
+                <article id="Experiences">
+                    <h1>School</h1>
+                    <h2>2016 - 2019</h2>
+                    <h3>SMAK St. Albertus Malang</h3>
+                    <br>
+                    <h1>College</h1>
+                    <h2>2019 - Now</h2>
+                    <h3>Computer Engineering - ITS SURABAYA</h3>
+                    <h3>Bangkit Academy 2022 by Google, GoTo, Traveloka: Cloud Computing</h3>
+                    <h3>Student Organization</h3>
+                    <p>Connect with me for details...<a class="linkedin" href="https://www.linkedin.com/in/androsa-kristabel-5b7b19216/"><span class="iconify" data-icon="akar-icons:linkedin-box-fill"></span></a></p>
+                </article>
+            </div>
+            
+            <div class="int" id="Interests">
+                <hr class="fix-overlapping">
+                <br>
+                <div class="first">Interests</div>
+                <article id="Int">
+                    <h1>Anime and Manga</h1>
+                    <h2>Berserk, Dragon Ball, etc</h2>
+                    <br>
+                    <h1>Literature</h1>
+                    <h2>The Inheritance Cycle</h2>
+                    <h3></h3>
+                    <br>
+                    <h1>Programming</h1>
+                    <h2>Front-End Development</h2>
+                </article>
+            </div>
+
+            <div class="Contact" id="Contacts">
+                <hr class="fix-overlapping">
+                <br>
+                <div class="first">Lets get in touch</div>
+                <article id="Cont">
+                    <h1>Feel free to reach me informally</h1>
+                    <h2><a class="whatsapp" href="https://wa.me/082253070763" alt="Whatsapp">Whatsapp
+                        <span class="iconify" data-icon="logos:whatsapp"></span></a></h2>
+                    <br>
+                    <h1>Or email me</h1>
+                    <form action="#">
+                    <div class="inputs">
+                        <div class="field name">
+                            <input type="text" placeholder="Name">
+                        </div>
+                        <div class="field email">
+                            <input type="text" placeholder="Email">
+                        </div>
+                    </div>
+                        <div class="field subject">
+                            <input type="text" placeholder="Subject">
+                        </div>
+                        <div class="field textarea">
+                            <textarea placeholder="Write your massage" cols="30" rows="10"></textarea>
+                        </div>
+                        <div class="button">
+                            <button type="submit">Send</button>
+                        </div>
+                    </form>
+                </article>
+            </div>
+        </section>
+
+                <aside class="biodata">
+                        <figure>
+                            <img src="stylesheet/Assets/profile.png" alt="Androsa Kristabel">
+                        </figure>
+                    <div class="data-diri">
+                        <p>Androsa Kristabel</p>
+                        <p>+62 82253070763</p>
+                    </div>
+                </aside>
+        </div>
+    
+
+    <script src="js\script.js"></script>
+</main>
+<footer>
+    <centre> scratched by Androsa Kristabel</centre>    
+</footer>
+</body>
+</html>
